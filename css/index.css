@@ -1,0 +1,79 @@
+@font-face { 
+    font-family: 'RobotoRegular'; 
+    src: url('fonts/Roboto-Regular.ttf') format('truetype'); 
+} 
+
+* {
+    font-family: sans-serif;
+    transition: 0.5s ease;
+}
+
+div,span {
+    margin: 0, 0;
+}
+
+body {
+    
+}
+
+.nav {
+    margin: 0 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 3em;
+    background: rgba(255,255,255,0.3);
+    z-index: 10;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+.nav ul a il {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 1s ease;
+}
+
+.nav ul a il:hover{
+    background-color: rgba(200,200,200,0.4);
+}
+
+.nav ul a {
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, #166 0%,#169 100%);
+    background: -o-linear-gradient(top, #166 0%,#169 100%);
+    background: -moz-linear-gradient(top, #166 0%,#169 100%);
+    
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    margin-top: 8em;
+    height: 16em;
+    width: 16em;
+}
+
+.logo_text {
+    margin-top: .3em;
+    font-size: 5em;
+    color: white;
+    text-shadow: 3px -3px 1px rgba(0,0,0,0.7);
+    font-family: RobotoRegular;
+}
