@@ -230,6 +230,10 @@ tr.table_title:hover{
   text-align: center;
 }
 
+.hl2 {
+  display: none;
+}
+
 @media screen and (max-width: 930px) {
       .sub_container {
         padding: 20px 40px;
@@ -336,5 +340,13 @@ tr.table_title:hover{
   }
   .hl1 {
     display: none;
+  }
+  .hl2 {
+    display: block;
+  }
+  .nav ul a il {
+    display: block;
+    margin-top: 8px;
+    width: calc(100% - 2em);
   }
 }

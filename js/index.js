@@ -35,6 +35,25 @@ var hookListener = () => {
       $(c).children()[2].innerHTML = platformList[p]["version"] || "Latest";
       $(c).children()[3].innerHTML = platformList[p]["date"] || "";
   });
+  $("#openmenu").on("click", () => {
+      if ($("#nav_menu").css("display") == "none") {
+        $("#nav_menu").css("opacity", "0");
+        $("#nav_menu").css("display", "block");
+        $("#nav").css("height","18em");
+        setTimeout(() => {
+            $("#nav_menu").css("opacity", "1");
+        }, 3e2);
+      } else {
+        $("#nav_menu").css("opacity", "0");
+        setTimeout(() => {
+            $("#nav").css("height","");
+            setTimeout(() => {
+              $("#nav_menu").css("display", "");
+              $("#nav_menu").css("opacity", "1");
+            }, 3e2);
+        }, 3e2);
+      }
+  });
 }
 
 document.onscroll = (e) => {
