@@ -1,99 +1,103 @@
+<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-    </head>
 
-    <body>
-        <div id="nav" class="nav">
-          <ul id="nav_menu" class="hl1">
-                <a locate="home" href="#"><il class="active">主页</il></a>
-                <a locate="about" href="#"><il>关于</il></a>
-                <a locate="download" href="#"><il>下载</il></a>
-                <a locate="donate" href="#"><il>捐赠</il></a>
-                <a href="index.html"><il>English</il></a>
-              </ul>
-              <ul class="hl2" style="width:4em;margin: .7em 0;">
-                  <a id="openmenu"><il>&nbsp;&nbsp;<i class="fa fa-bars"></i></il></a>
-              </ul>
-        </div>
-        <div class="background"></div>
-        <div id="home" class="container">
-            <img class="logo" src="img/pipesocks.png" />
-            <br />
-            <span class="logo_text">pipesocks</span>
-            <br /><hr class="mid" />
-            <span class="logo_text_sub">一个像管道一样的SOCKS5隧道系统。 <i style="color:white;" class="fa fa-plane" aria-hidden="true"></i></span>
-        </div>
-        <div id="about" class="container">
-            <div class="pre_text">关于</div>
-            <hr class="midl"/>
-            <div class="sub_container">
-              <div class="icon_intro">
-                <div class="icon_intro_idiv"><i class="fa fa-server" aria-hidden="true"></i></div>
-                <div class="icon_intro_sdiv">泵运行在防水墙以外的服务器上，它是客户端访问互联网的门户。</div>
-              </div>
-              <div class="icon_intro">
-                <div class="icon_intro_idiv"><i class="fa fa-compress" aria-hidden="true"></i></div>
-                <div class="icon_intro_sdiv">管道可以建立在客户端和服务器之间，无条件地转移数据。</div>
-              </div>
-              <div class="icon_intro">
-                <div class="icon_intro_idiv"><i class="fa fa-desktop" aria-hidden="true"></i></div>
-                <div class="icon_intro_sdiv">龙头就是客户端，它通过SOCKS5重定向用户的流量，使它们经由泵越过防水墙。</div>
-              </div>
-            </div>
-        </div>
-        <div id="download" class="container">
-          <div class="pre_text">下载</div>
-          <hr class="midl"/>
-          <div class="sub_container">
-          <table class="download_table">
-            <tr class="table_title">
-              <td>操作系统</td>
-              <td class="hl1">架构</td>
-              <td>版本</td>
-              <td>发布日期</td>
-            </tr>
-            <tr gotod="win">
-              <td>豌豆斯系统</td>
-              <td class="hl1">32位／64位</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr gotod="linux">
-              <td>里钠克斯系统</td>
-              <td class="hl1">32位／64位</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr gotod="macOS">
-              <td>麦克银图爱西系统</td>
-              <td class="hl1">64位</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr gotod="github">
-              <td>源代码</td>
-              <td class="hl1">所有系统</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-          </table>
-          </div>
-        </div>
-        <div id="donate" class="container">
-          <div class="pre_text">捐赠</div>
-          <hr class="midl"/>
-            <div class="sub_container">
-              <div class="donate"></div>
-              <div class="donate"></div>
-              <div class="donate"></div>
-            </div>
-        </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>pipesocks</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/index.js"></script>
-    </body>
+  <body>
+    <div id="nav" class="nav">
+      <ul id="nav_menu" class="hl1">
+        <li class="active"><a data-locate="home">主页</a></li>
+        <li><a data-locate="about">关于</a></li>
+        <li><a data-locate="download">下载</a></li>
+        <li><a data-locate="donate">捐赠</a></li>
+        <li><a href="index.html">English</a></li>
+      </ul>
+      <ul class="hl2" style="width:4em;margin: .7em 0;">
+        <li><a id="openmenu">&nbsp;&nbsp;<i class="fa fa-bars"></i></a></li>
+      </ul>
+    </div>
+    <div id="home" class="container">
+      <img class="logo" src="img/pipesocks.png" />
+      <br>
+      <span class="logo_text">pipesocks</span>
+      <br>
+      <hr class="mid">
+      <span class="logo_text_sub">一个像管道一样的SOCKS5隧道系统。 <i style="color:white;" class="fa fa-plane" aria-hidden="true"></i></span>
+    </div>
+    <div id="about" class="container">
+      <div class="pre_text">关于</div>
+      <hr class="midl">
+      <div class="sub_container">
+        <div class="icon_intro">
+          <div class="icon_intro_idiv"><i class="fa fa-server" aria-hidden="true"></i></div>
+          <div class="icon_intro_sdiv">泵运行在防水墙以外的服务器上，它是客户端访问互联网的门户。</div>
+        </div>
+        <div class="icon_intro">
+          <div class="icon_intro_idiv"><i class="fa fa-compress" aria-hidden="true"></i></div>
+          <div class="icon_intro_sdiv">管道可以建立在客户端和服务器之间，无条件地转移数据。</div>
+        </div>
+        <div class="icon_intro">
+          <div class="icon_intro_idiv"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+          <div class="icon_intro_sdiv">龙头就是客户端，它通过SOCKS5重定向用户的流量，使它们经由泵越过防水墙。</div>
+        </div>
+      </div>
+    </div>
+    <div id="download" class="container">
+      <div class="pre_text">下载</div>
+      <hr class="midl">
+      <div class="sub_container">
+        <table class="download_table">
+          <tr>
+            <th>操作系统</th>
+            <th class="hl1">架构</th>
+            <th>版本</th>
+            <th>发布日期</th>
+          </tr>
+          <tr data-gotod="win">
+            <td>豌豆斯系统</td>
+            <td class="hl1">32位／64位</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr data-gotod="linux">
+            <td>里钠克斯系统</td>
+            <td class="hl1">32位／64位</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr data-gotod="macOS">
+            <td>麦克银图爱西系统</td>
+            <td class="hl1">64位</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr data-gotod="github">
+            <td>源代码</td>
+            <td class="hl1">所有系统</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="donate" class="container">
+      <div class="pre_text">捐赠</div>
+      <hr class="midl">
+      <div class="sub_container">
+        <div class="donate"></div>
+        <div class="donate"></div>
+        <div class="donate"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+
 </html>
