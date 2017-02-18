@@ -18,6 +18,7 @@ body {
 
 .nav {
     margin: 0 0;
+    padding-bottom: 5px;
     left: 0;
     top: 0;
     position: fixed;
@@ -72,6 +73,10 @@ body {
     width: 100%;
     height: inherit;
     padding: 90px 0;
+}
+
+#home {
+    padding: 10% 0;
 }
 
 .logo {
@@ -180,6 +185,51 @@ div.icon_intro_idiv {
     padding: 10px;
 }
 
+.download_table {
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.5);
+  margin: 0 auto;
+  color: white;
+  font-size: 1.2em;
+}
+
+.download_table tr:hover{
+  background-color: rgba(255,255,255,0.3);
+}
+
+.download_table tr:hover{
+  background-color: rgba(255,255,255,0.3);
+}
+
+
+.download_table td{
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,0.5);
+  padding: 1em 3em;
+}
+
+tr.table_title:hover{
+  background-color: rgba(0,0,0,0.5);
+}
+.table_title {
+  background-color: rgba(0,0,0,0.5);
+}
+.table_title td {
+  cursor: default;
+}
+
+.donate {
+  display: inline-block;
+  margin: 1em 1em;
+  width: 9em;
+  height: 3em;
+  background-color: rgba(200,150,100,.7);
+}
+
+#donate .sub_container {
+  text-align: center;
+}
+
 @media screen and (max-width: 930px) {
       .sub_container {
         padding: 20px 40px;
@@ -205,6 +255,12 @@ div.icon_intro_idiv {
         font-size: 1.5em;
         padding-left: 2.5em;
       }
+      .download_table {
+        font-size: 1em;
+      }
+      .download_table td{
+        padding: 1em 2em;
+      }
 }
 
 
@@ -219,6 +275,12 @@ div.icon_intro_idiv {
       }
       .icon_intro_sdiv {
         font-size: 1em;
+      }
+      .download_table {
+        font-size: 1em;
+      }
+      .download_table td{
+        padding: 1em 1em;
       }
 }
 
@@ -240,7 +302,7 @@ div.icon_intro_idiv {
       padding: 1.4em;
       width: 1.4em;
       height: 1.4em;
-      margin-left: 1em;
+      margin-left: 2.5em;
     }
     .icon_intro_idiv i{
       font-size: 1.4em;
@@ -248,9 +310,31 @@ div.icon_intro_idiv {
     .icon_intro_sdiv {
       font-size: 1em;
       max-width: calc(50%);
+      padding-top: 0;
       padding-left: .5em;
+      padding-right: 2.5em;
+      float: right;
     }
     .sub_container {
       padding: 10px 5px;
     }
+    .download_table {
+      font-size: .8em;
+    }
+    .download_table td{
+      padding: 1em .5em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+  div.icon_intro_idiv {
+    margin-left: 1em;
+  }
+  .icon_intro_sdiv {
+    padding-right: 1em;
+    font-size: .8em;
+  }
+  .hl1 {
+    display: none;
+  }
 }
