@@ -1,9 +1,40 @@
-window.onload = () => {
-    $("a[locate]").each((n,c) => {
-        $(c).on("click", () => {
-            navTo($(c).attr("locate"));
-        });
-    });
+var platformList = {
+  "linux": {
+    "version": "2.2",
+    "date"   : "2017/02/08",
+    "package": "zip"
+  },
+  "macOS": {
+    "version": "2.2",
+    "date"   : "2017/02/08",
+    "package": "dmg"
+  },
+  "win": {
+    "version": "2.2",
+    "date"   : "2017/02/08",
+    "package": "exe"
+  },
+  "github": {
+    "package": "",
+    "url": "https://github.com/pipesocks/pipesocks"
+  }
+}
+var baseUrl = "https://coding.net/u/yvbbrjdr/p/pipesocks-release/git/raw/master/pipesocks-";
+
+var hookListener = () => {
+  $("a[locate]").each((n,c) => {
+      $(c).on("click", () => {
+          navTo($(c).attr("locate"));
+      });
+  });
+  $("tr[gotod]").each((n,c) => {
+      var p = $(c).attr("gotod");
+      $(c).on(("click"), () => {
+          window.open(platformList[p]["url"] || baseUrl + platformList[p]["version"] + "-" + p + "." + platformList[p]["package"]);
+      });
+      $(c).children()[2].innerHTML = platformList[p]["version"] || "Latest";
+      $(c).children()[3].innerHTML = platformList[p]["date"] || "";
+  });
 }
 
 document.onscroll = (e) => {
@@ -33,4 +64,8 @@ var navSet = () => {
         }
     });
 
+}
+
+window.onload = () => {
+    hookListener();
 }
