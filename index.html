@@ -1,99 +1,103 @@
+<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-    </head>
 
-    <body>
-        <div id="nav" class="nav">
-            <ul id="nav_menu" class="hl1">
-                <a locate="home" href="#"><il class="active">Home</il></a>
-                <a locate="about" href="#"><il>About</il></a>
-                <a locate="download" href="#"><il>Download</il></a>
-                <a locate="donate" href="#"><il>Donate</il></a>
-                <a href="index-cn.html"><il>中文</il></a>
-            </ul>
-            <ul class="hl2" style="width:4em;margin: .7em 0;">
-                <a id="openmenu"><il>&nbsp;&nbsp;<i class="fa fa-bars"></i></il></a>
-            </ul>
-        </div>
-        <div class="background"></div>
-        <div id="home" class="container">
-            <img class="logo" src="img/pipesocks.png" />
-            <br />
-            <span class="logo_text">pipesocks</span>
-            <br /><hr class="mid" />
-            <span class="logo_text_sub">A pipe-like SOCKS5 tunnel system. <i style="color:white;" class="fa fa-plane" aria-hidden="true"></i></span>
-        </div>
-        <div id="about" class="container">
-            <div class="pre_text">About</div>
-            <hr class="midl"/>
-            <div class="sub_container">
-              <div class="icon_intro">
-                <div class="icon_intro_idiv"><i class="fa fa-server" aria-hidden="true"></i></div>
-                <div class="icon_intro_sdiv">Pump is the server outside the firewall to provide Internet data for tap.</div>
-              </div>
-              <div class="icon_intro">
-                <div class="icon_intro_idiv"><i class="fa fa-compress" aria-hidden="true"></i></div>
-                <div class="icon_intro_sdiv">Pipe is a relay server which unconditionally transfers data through pump and tap.</div>
-              </div>
-              <div class="icon_intro">
-                <div class="icon_intro_idiv"><i class="fa fa-desktop" aria-hidden="true"></i></div>
-                <div class="icon_intro_sdiv">Tap is a client running in local with SOCKS5 interface for native clients and connects to pump or pipe.</div>
-              </div>
-            </div>
-        </div>
-        <div id="download" class="container">
-          <div class="pre_text">Download</div>
-          <hr class="midl"/>
-          <div class="sub_container">
-          <table class="download_table">
-            <tr class="table_title">
-              <td>Operating System</td>
-              <td class="hl1">Architecture</td>
-              <td>Version</td>
-              <td>Release Date</td>
-            </tr>
-            <tr gotod="win">
-              <td>Windows</td>
-              <td class="hl1">x86/x86_X64</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr gotod="linux">
-              <td>GNU/Linux</td>
-              <td class="hl1">x86/x86_X64</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr gotod="macOS">
-              <td>Macintosh</td>
-              <td class="hl1">Intel x64</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr gotod="github">
-              <td>Open Source</td>
-              <td class="hl1">All Platforms</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-          </table>
-          </div>
-        </div>
-        <div id="donate" class="container">
-          <div class="pre_text">Donate</div>
-          <hr class="midl"/>
-            <div class="sub_container">
-              <div class="donate"></div>
-              <div class="donate"></div>
-              <div class="donate"></div>
-            </div>
-        </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>pipesocks</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/index.js"></script>
-    </body>
+  <body>
+    <div id="nav" class="nav">
+      <ul id="nav_menu" class="hl1">
+        <li class="active"><a data-locate="home">Home</a></li>
+        <li><a data-locate="about">About</a></li>
+        <li><a data-locate="download">Download</a></li>
+        <li><a data-locate="donate">Donate</a></li>
+        <li><a href="index-cn.html">中文</a></li>
+      </ul>
+      <ul class="hl2" style="width:4em;margin: .7em 0;">
+        <li><a id="openmenu">&nbsp;&nbsp;<i class="fa fa-bars"></i></a></li>
+      </ul>
+    </div>
+    <div id="home" class="container">
+      <img class="logo" src="img/pipesocks.png" />
+      <br>
+      <span class="logo_text">pipesocks</span>
+      <br>
+      <hr class="mid">
+      <span class="logo_text_sub">A pipe-like SOCKS5 tunnel system. <i style="color:white;" class="fa fa-plane" aria-hidden="true"></i></span>
+    </div>
+    <div id="about" class="container">
+      <div class="pre_text">About</div>
+      <hr class="midl">
+      <div class="sub_container">
+        <div class="icon_intro">
+          <div class="icon_intro_idiv"><i class="fa fa-server" aria-hidden="true"></i></div>
+          <div class="icon_intro_sdiv">Pump is the server outside the firewall to provide Internet data for tap.</div>
+        </div>
+        <div class="icon_intro">
+          <div class="icon_intro_idiv"><i class="fa fa-compress" aria-hidden="true"></i></div>
+          <div class="icon_intro_sdiv">Pipe is a relay server which unconditionally transfers data through pump and tap.</div>
+        </div>
+        <div class="icon_intro">
+          <div class="icon_intro_idiv"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+          <div class="icon_intro_sdiv">Tap is a client running in local with SOCKS5 interface for native clients and connects to pump or pipe.</div>
+        </div>
+      </div>
+    </div>
+    <div id="download" class="container">
+      <div class="pre_text">Download</div>
+      <hr class="midl">
+      <div class="sub_container">
+        <table class="download_table">
+          <tr>
+            <th>Operating System</th>
+            <th class="hl1">Architecture</th>
+            <th>Version</th>
+            <th>Release Date</th>
+          </tr>
+          <tr data-gotod="win">
+            <td>Windows</td>
+            <td class="hl1">x86/x86_X64</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr data-gotod="linux">
+            <td>GNU/Linux</td>
+            <td class="hl1">x86/x86_X64</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr data-gotod="macOS">
+            <td>Macintosh</td>
+            <td class="hl1">Intel x64</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr data-gotod="github">
+            <td>Open Source</td>
+            <td class="hl1">All Platforms</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="donate" class="container">
+      <div class="pre_text">Donate</div>
+      <hr class="midl">
+      <div class="sub_container">
+        <div class="donate"></div>
+        <div class="donate"></div>
+        <div class="donate"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+
 </html>
