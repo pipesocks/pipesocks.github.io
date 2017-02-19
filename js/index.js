@@ -43,7 +43,7 @@
       e.preventDefault();
       const $nav = $('#nav');
       if ($nav.hasClass("nav-expanded")) {
-        $('#nav_menu').fadeOut(300);
+        $('#nav_menu').fadeOut(300, () => $('#nav_menu').css('display', ''));
         $nav.removeClass('nav-expanded').css("height", "");
       } else {
         $('#nav_menu').delay(300).fadeIn(300);
