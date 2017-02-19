@@ -16,9 +16,16 @@
       "date": "2017/02/08",
       "package": "exe"
     },
-    "github": {
-      "package": "",
+    "iOS": {
+      "version": "×",
+      "date": "×",
+      "url": "https://github.com/pipesocks/pipesocks-iOS"
+    },
+    "github-desktop": {
       "url": "https://github.com/pipesocks/pipesocks"
+    },
+    "github-iOS": {
+      "url": "https://github.com/pipesocks/pipesocks-iOS"
     }
   }
   const baseUrl = "https://coding.net/u/yvbbrjdr/p/pipesocks-release/git/raw/master/pipesocks-";
@@ -31,7 +38,12 @@
     $("tr[data-gotod]").each((n, c) => {
       const $c = $(c);
       const p = $c.data("gotod");
-      const url = `${platformList[p]["url"] || baseUrl}${platformList[p]["version"]}-${p}.${platformList[p]["package"]}`;
+      var url;
+      if (platformList[p]["url"] == null) {
+        url = `${baseUrl}${platformList[p]["version"]}-${p}.${platformList[p]["package"]}`;
+      } else {
+        url = platformList[p]["url"];
+      }
       $c.children('td').click(e => {
         e.preventDefault();
         window.location.href = url;

@@ -14,9 +14,10 @@
       <ul id="nav_menu" class="hl1">
         <li class="active"><a data-locate="home">主页</a></li>
         <li><a data-locate="about">关于</a></li>
+        <li><a data-locate="tutorial">教程</a></li>
         <li><a data-locate="download">下载</a></li>
         <li><a data-locate="donate">捐赠</a></li>
-        <li><a href="index.html">English</a></li>
+        <li><a href=".">English</a></li>
       </ul>
       <ul class="hl2" style="width:4em;margin: .7em 0;">
         <li><a id="openmenu">&nbsp;&nbsp;<i class="fa fa-bars"></i></a></li>
@@ -28,7 +29,7 @@
       <span class="logo_text">pipesocks</span>
       <br>
       <hr class="mid">
-      <span class="logo_text_sub">一个像管道一样的SOCKS5隧道系统。 <i style="color:white;" class="fa fa-plane" aria-hidden="true"></i></span>
+      <span class="logo_text_sub">让翻墙成为一种艺术。 <i style="color:white;" class="fa fa-plane" aria-hidden="true"></i></span>
     </div>
     <div id="about" class="container">
       <div class="pre_text">关于</div>
@@ -36,7 +37,7 @@
       <div class="sub_container">
         <div class="icon_intro">
           <div class="icon_intro_idiv"><i class="fa fa-server" aria-hidden="true"></i></div>
-          <div class="icon_intro_sdiv">泵运行在防水墙以外的服务器上，它是客户端访问互联网的门户。</div>
+          <div class="icon_intro_sdiv">水泵运行在防水墙以外的服务器上，它是水龙头访问互联网的门户。</div>
         </div>
         <div class="icon_intro">
           <div class="icon_intro_idiv"><i class="fa fa-compress" aria-hidden="true"></i></div>
@@ -44,9 +45,13 @@
         </div>
         <div class="icon_intro">
           <div class="icon_intro_idiv"><i class="fa fa-desktop" aria-hidden="true"></i></div>
-          <div class="icon_intro_sdiv">龙头就是客户端，它通过SOCKS5重定向用户的流量，使它们经由泵越过防水墙。</div>
+          <div class="icon_intro_sdiv">水龙头就是客户端，它在本地提供一个SOCKS5接口给用户应用使用，使流量经由管道和水泵越过防水墙。</div>
         </div>
       </div>
+    </div>
+    <div id="tutorial" class="container">
+      <div class="pre_text">教程</div>
+      <hr class="midl">
     </div>
     <div id="download" class="container">
       <div class="pre_text">下载</div>
@@ -66,7 +71,7 @@
             <td>-</td>
           </tr>
           <tr data-gotod="linux">
-            <td>Linux</td>
+            <td>Linux（无图形界面）</td>
             <td class="hl1">64位</td>
             <td>-</td>
             <td>-</td>
@@ -77,9 +82,21 @@
             <td>-</td>
             <td>-</td>
           </tr>
-          <tr data-gotod="github">
-            <td>源代码</td>
+          <tr data-gotod="iOS">
+            <td>iOS</td>
+            <td class="hl1">iOS 9.0或更高</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr data-gotod="github-desktop">
+            <td>桌面源代码</td>
             <td class="hl1">所有系统</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr data-gotod="github-iOS">
+            <td>iOS源代码</td>
+            <td class="hl1">iOS 9.0或更高</td>
             <td>-</td>
             <td>-</td>
           </tr>
@@ -91,13 +108,11 @@
       <hr class="midl">
       <div class="sub_container">
         <div class="donate"></div>
-        <div class="donate"></div>
-        <div class="donate"></div>
       </div>
     </div>
 
     <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 
 </html>

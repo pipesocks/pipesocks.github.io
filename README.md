@@ -1,2 +1,2 @@
 # pipesocks.github.io
-A website for pipesocks.
+A [website](https://pipesocks.github.io) for pipesocks.
