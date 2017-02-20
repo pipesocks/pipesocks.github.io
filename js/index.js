@@ -19,7 +19,7 @@
     "iOS": {
       "version": "×",
       "date": "×",
-      "url": "https://github.com/pipesocks/pipesocks-iOS"
+      "url": "https://itunes.apple.com/us/app/pipesocks/id1201534301?l=zh&ls=1&mt=8"
     },
     "github-desktop": {
       "url": "https://github.com/pipesocks/pipesocks"
