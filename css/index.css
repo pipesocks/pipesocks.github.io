@@ -276,7 +276,7 @@ body {
     margin-top: 8px;
   }
   .nav.nav-expanded {
-    height: 20em;
+    height: 21em;
   }
 }
 @media screen and (min-width: 721px) {
