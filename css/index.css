@@ -6,7 +6,8 @@
 }
 
 a {
-    text-decoration:none
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 body {
@@ -200,6 +201,7 @@ body {
   margin: 1em 1em;
   width: 9em;
   height: 3em;
+  line-height: 3em;
   background-color: rgba(200,150,100,.7);
 }
 
