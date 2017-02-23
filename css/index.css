@@ -5,6 +5,10 @@
     transition: 0.5s ease;
 }
 
+a {
+    text-decoration:none
+}
+
 body {
     background: linear-gradient(top, #966 0%,#169 100%) fixed;
     background: -webkit-linear-gradient(top, #966 0%,#169 100%) fixed;
