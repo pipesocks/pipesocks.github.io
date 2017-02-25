@@ -2,18 +2,18 @@
 ((window, $) => {
   const platformList = {
     "linux": {
-      "version": "2.2",
-      "date": "2017/02/08",
-      "package": "zip"
+      "version": "2.3",
+      "date": "2017/02/26",
+      "package": "tar.xz"
     },
     "macOS": {
-      "version": "2.2",
-      "date": "2017/02/08",
+      "version": "2.3",
+      "date": "2017/02/26",
       "package": "dmg"
     },
     "win": {
-      "version": "2.2",
-      "date": "2017/02/08",
+      "version": "2.3",
+      "date": "2017/02/26",
       "package": "exe"
     },
     "iOS": {
