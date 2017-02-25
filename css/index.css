@@ -173,9 +173,9 @@ body {
   /* border: 1px solid rgba(0,0,0,0.5); */
   flex: 1;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.15em;
   display: block;
-  max-width: 50em;
+  margin: 10%;
 }
 
 .download_table tr:hover {

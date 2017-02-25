@@ -64,14 +64,8 @@
     });
   }
 
-  let scrollTriggered = false;
   window.document.onscroll = e => {
-    if (scrollTriggered) return;
-    scrollTriggered = true;
-    setTimeout(() => {
-      scrollTriggered = false;
-      navSet()
-    }, 300);
+    window.requestAnimationFrame(navSet);
   };
 
   function navTo(n) {
