@@ -83,7 +83,7 @@ pipesocks里面的配置啥的和Windows是一模一样的，在这里就不赘�
 登录你的终端，进入一个合适的目录（不可以是tmp！！），运行这些命令：
 
 ```sh
-wget https://coding.net/u/yvbbrjdr/p/pipesocks-release/git/raw/master/pipesocks-2.3-linux.tar.xz
+wget https://github.com/pipesocks/pipesocks/releases/download/2.3/pipesocks-2.3-linux.tar.xz
 tar -xJf pipesocks-2.3-linux.tar.xz
 cd pipesocks/
 screen ./runpipesocks.sh pump -p 本地端口 -k 密码
