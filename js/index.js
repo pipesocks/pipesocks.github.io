@@ -26,7 +26,11 @@
 
   function navSet() {
     const aHeight = window.pageYOffset;
-    $("#nav").css("background-color", "rgba(0,0,0," + ((aHeight / 500) > 0.8 ? 0.8 : (aHeight / 500)) + ")");
+    $("#nav").css("background-color", `rgba(0,0,0,${
+      (aHeight / 500) > 0.8
+      ? 0.8
+      : (aHeight / 500)})`);
+
     let isset = false;
     $("a[data-locate]").each((n, c) => {
       const $c = $(c);
