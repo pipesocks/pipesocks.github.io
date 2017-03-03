@@ -1,0 +1,31 @@
+{
+  "baseUrl": "https://coding.net/u/yvbbrjdr/p/pipesocks-release/git/raw/master/pipesocks-",
+  "platform": {
+    "linux": {
+      "version": "2.2",
+      "date": "2017/02/08",
+      "package": "zip"
+    },
+    "macOS": {
+      "version": "2.2",
+      "date": "2017/02/08",
+      "package": "dmg"
+    },
+    "win": {
+      "version": "2.2",
+      "date": "2017/02/08",
+      "package": "exe"
+    },
+    "iOS": {
+      "version": "×",
+      "date": "×",
+      "url": "https://itunes.apple.com/us/app/pipesocks/id1201534301?l=zh&ls=1&mt=8"
+    },
+    "github-desktop": {
+      "url": "https://github.com/pipesocks/pipesocks"
+    },
+    "github-iOS": {
+      "url": "https://github.com/pipesocks/pipesocks-iOS"
+    }
+  }
+}
