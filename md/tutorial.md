@@ -97,7 +97,7 @@ screen ./runpipesocks.sh pump -p 本地端口 -k 密码
 
 ### Docker
 
-pipesocks开始支持Docker了哦！！！镜像在`Docker Hub`上，把`pipesocks/pipesocks:latest`pull下来就可以直接用了！启动CMD是`./runpipesocks.sh pump -p 端口 -k 密码`。别忘记把端口映射出去哦。
+pipesocks开始支持Docker了哦！！！镜像在Docker Hub上，把`pipesocks/pipesocks`pull下来就可以直接用了！只需要修改两个环境变量：`port`和`password`，分别代表端口和密码（默认端口7473）。别忘记把端口映射出去哦。
 
 ### Windows
 
