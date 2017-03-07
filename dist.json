@@ -3,22 +3,22 @@
   "platform": {
     "linux": {
       "version": "2.3",
-      "date": "2017/02/26",
+      "date": "2017/03/07",
       "package": "tar.xz"
     },
     "macOS": {
       "version": "2.3",
-      "date": "2017/02/26",
+      "date": "2017/03/07",
       "package": "dmg"
     },
     "win": {
       "version": "2.3",
-      "date": "2017/02/26",
+      "date": "2017/03/07",
       "package": "exe"
     },
     "iOS": {
-      "version": "×",
-      "date": "×",
+      "version": "1.0 (4)",
+      "date": "Test Flight",
       "url": "https://itunes.apple.com/us/app/pipesocks/id1201534301?l=zh&ls=1&mt=8"
     },
     "github-desktop": {
