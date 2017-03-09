@@ -62,7 +62,7 @@ pipesocks里面的配置啥的和Windows是一模一样的，在这里就不赘�
 
 你根本不是小白！！！有哪个小白用linux的！！！
 
-所以我给你留了一个挑战！linux版本的pipesocks是没有图形界面的！！你要运行tap的话只能在终端里面敲`./runpipesocks.sh tap -H 服务器地址 -P 服务器端口 -p 本地端口 -k 密码`。代理啥的你肯定会设置的，你又不是小白！否则你根本不配翻墙！！！
+所以我给你留了一个挑战！linux版本的pipesocks是没有图形界面的！！你要运行tap的话只能在终端里面敲`./pipesocks tap -H 服务器地址 -P 服务器端口 -p 本地端口 -k 密码`。代理啥的你肯定会设置的，你又不是小白！否则你根本不配翻墙！！！
 
 嗯。。如果你不需要架服务器。。那看到这里就可以关闭啦！翻墙愉快！
 
@@ -85,8 +85,7 @@ pipesocks里面的配置啥的和Windows是一模一样的，在这里就不赘�
 ```sh
 wget https://github.com/pipesocks/pipesocks/releases/download/2.3/pipesocks-2.3-linux.tar.xz
 tar -xJf pipesocks-2.3-linux.tar.xz
-cd pipesocks/
-screen ./runpipesocks.sh pump -p 本地端口 -k 密码
+screen ./pipesocks pump -p 本地端口 -k 密码
 ```
 
 然后你按`Ctrl+A`然后按`D`再退出终端，pipesocks水泵就会一直在后台运行了，你就可以用教程的第一部分来翻墙了，或者把你的服务器地址、端口、密码发给小白hahahaha。
