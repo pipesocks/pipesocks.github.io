@@ -1,6 +1,7 @@
 * {
     font-family: 'Roboto', sans-serif;
     transition: 0.5s ease;
+    box-sizing: border-box;
 }
 
 a {
@@ -8,7 +9,12 @@ a {
     color: whitesmoke;
 }
 
+html {
+    overflow: hidden; height: 100%;
+}
+
 body {
+    overflow: auto; height: 100%;
     background: linear-gradient(top, #966 0%,#169 100%) fixed;
     background: -webkit-linear-gradient(top, #966 0%,#169 100%) fixed;
     background: -o-linear-gradient(top, #966 0%,#169 100%) fixed;
@@ -136,7 +142,8 @@ body {
   border-radius: 100%;
   box-shadow: 2px -1px 3px rgba(0,0,0,0.7);
   padding: 2em;
-  width: 4em;
+  width: 8em;
+  height: 8em;
   text-align: center;
 }
 
@@ -153,6 +160,8 @@ body {
   white-space: pre-wrap;
   word-wrap: break-word;
   overflow: hidden;
+  max-width: 20em;
+  margin: 0 auto;
 }
 
 .mid {
@@ -182,7 +191,10 @@ body {
   /* border: 1px solid rgba(0,0,0,0.5); */
   flex: 1;
   color: white;
-  font-size: 1.15em;
+  display: block;
+}
+
+.download_table tbody {
   display: block;
 }
 
@@ -190,10 +202,18 @@ body {
   background-color: rgba(255,255,255,0.3);
 }
 
+.download_table tr {
+  display: flex;
+  min-width: 20em;
+}
+
 .download_table td,
 .download_table th {
+  width: 25%;
+  display: inline-block;
   border: 1px solid rgba(0,0,0,0.5);
-  padding: 1em 2em;
+  padding: 0.5em 1em;
+  word-break: break-word;
 }
 
 .download_table td {
@@ -249,7 +269,7 @@ body {
   }
   .download_table th,
   .download_table td {
-    padding: .5em 0.25em;
+    padding: .5em .25em;
   }
   .nav ul {
     padding-left: 5%;
@@ -265,7 +285,7 @@ body {
     margin: 0 25%;
   }
   .download_table td{
-    padding: 1em .5em;
+    padding: .5em .4em;
   }
 }
 
@@ -299,6 +319,6 @@ body {
     display: block !important;
   }
   .download_table {
-    margin: 10%;
+    margin: 20px 10% 0 10%;
   }
 }

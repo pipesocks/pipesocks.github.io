@@ -88,8 +88,8 @@
   }
 
   $(() => {
-    loadFonts();
     loadPlatforms();
     hookListener();
+    loadFonts();
   });
 })(window, jQuery);
