@@ -1,15 +1,22 @@
 'use strict';
 ((window, $) => {
+  let $navTabs = $('#nav_menu a[data-nav]');
+
   function hookListener() {
     // Navbar click
-    $("#nav_menu a[data-locate]").click(function (e) {
+    $navTabs.click(function (e) {
       e.preventDefault();
-      navTo($(this).data("locate"));
+      navTo($(this).attr('href'));
     });
 
     // Navbar auto switch
+    let navSetting = false;
     $(window).scroll(e => {
-      window.requestAnimationFrame(navSet);
+      !navSetting && window.requestAnimationFrame(() => {
+        navSet();
+        navSetting = false;
+      });
+      navSetting = true;
     });
 
     // Toggle menu
@@ -20,8 +27,7 @@
   }
 
   function navTo(n) {
-    $("body").animate({ scrollTop: $("#" + n).offset().top }, 1e3);
-    navSet(n);
+    $("body").animate({ scrollTop: $(n).offset().top }, 1e3);
   }
 
   function navSet() {
@@ -32,9 +38,9 @@
       : (aHeight / 500)})`);
 
     let isset = false;
-    $("a[data-locate]").each((n, c) => {
+    $navTabs.each((n, c) => {
       const $c = $(c);
-      const $navTarget = $(`#${$c.data("locate")}`);
+      const $navTarget = $($c.attr('href'));
       if (isset) {
         $c.parent().removeClass("active");
       } else {
@@ -47,6 +53,19 @@
         }
       }
     });
+  }
+
+  function loadFont(url) {
+    const el = window.document.createElement('link');
+    el.rel = 'stylesheet';
+    el.type = 'text/css';
+    el.href = url;
+    window.document.head.appendChild(el);
+  }
+
+  function loadFonts() {
+    loadFont('//fonts.lug.ustc.edu.cn/css?family=Roboto');
+    loadFont('//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css');
   }
 
   function loadPlatforms() {
@@ -69,6 +88,7 @@
   }
 
   $(() => {
+    loadFonts();
     loadPlatforms();
     hookListener();
   });
