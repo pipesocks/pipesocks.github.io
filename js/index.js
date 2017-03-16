@@ -27,7 +27,8 @@
   }
 
   function navTo(n) {
-    $("body").animate({ scrollTop: $(n).offset().top }, 1e3);
+    const isFF = 'MozAppearance' in document.documentElement.style;
+    $(isFF ? 'html' : 'body').animate({ scrollTop: $(n).offset().top }, 1e3);
   }
 
   function navSet() {

@@ -9,10 +9,6 @@ a {
     color: whitesmoke;
 }
 
-html {
-    overflow: hidden; height: 100%;
-}
-
 body {
     overflow: auto; height: 100%;
     background: linear-gradient(top, #966 0%,#169 100%) fixed;
@@ -150,8 +146,10 @@ body {
 }
 
 .icon_intro i {
+  margin-left: -0.05em;
   text-shadow: 2px -2px 1px rgba(0,0,0,0.7);
   font-size: 4em;
+  width: 1em;
 }
 
 .icon_intro_sdiv {
